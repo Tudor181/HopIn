@@ -11,7 +11,7 @@ def calc_emisii_co2():
     calatorii_saptamanale = int(
         input("Nr de calatorii saptamanale ale unei persoane(masina) (ex. 3-4): ")
     )
-    ## sa introducem numarul de calatorii pe sapt ca si parametru
+
     sapt_an = 52
     # Calcul general pt o zi - nr total de masini . 100 de masini / zi. 100g -> * 365 -> 190 zile. 90 masini, duminica is 10. 100 in fiecare timp de 4 zile.
     nr_masini = populatie * procent_soferi
@@ -29,13 +29,13 @@ def calc_emisii_co2():
         f"• CO₂ emis anual: {emisii_totale * calatorii_saptamanale * sapt_an / 1000:,.2f} tone"  # 52 sapt pe an
     )
     # 3 calatorii * (365/7)
-    # Reducere prin carpooling
+
     print("\n🚗 Estimare reducere prin carpooling:")
     reducere_procent = (
         float(input("Procent șoferi care folosesc carpooling (ex. 10 pentru 10%): "))
         / 100
     )
-    # pasageri = int(input("Număr pasageri/mașină (ex. 2): "))
+    # pasageri = int(input("Număr pasageri/mașină (ex. 2): ")) # pt viitor
 
     masini_eliminate = nr_masini * reducere_procent  # 100 masini -1% -> 1 masina.
     print(f"• Masini eliminate astfel zilnic: {masini_eliminate:,.0f} masini")
@@ -87,5 +87,3 @@ def calc_emisii_co2():
 
 if __name__ == "__main__":
     calc_emisii_co2()
-
-# 100 de oameni, 50 au masini - 4 zile pe sapt 50 is folosite.
