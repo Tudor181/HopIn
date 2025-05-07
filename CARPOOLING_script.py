@@ -80,8 +80,9 @@ def calc_emisii_co2():
     # - development aplicatie -> salar angajati, licente, sisteme.
     # - reclama
     # - intretinere - sv up, platesti google pt harta.
-    # 2000 eur angajat -> 6 persoane - 3 back / 3 front - 3 luni > 18 salarii * 2k = 32k eur pt dev. - 800 eur.
-    #
+    # 2000 eur angajat -> 6 persoane - 3 back / 3 front - 3 luni > 18 salarii * 2k = 32k eur pt dev. - internshipper - 800 eur.
+
+    # scopul proiectului este eco friendly - dar si costul economic are un impact:
     # 500k eur - ca sa salvezi 50k - > 500k au fost produsi vanzare petrol.
 
 
